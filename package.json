@@ -1,6 +1,6 @@
 {
     "name": "pname",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Get the name of the calling package.",
     "repository": "https://github.com/Richienb/pname.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
@@ -17,7 +17,10 @@
         "lint": "eslint .",
         "test": "yarn lint && ava"
     },
-    "keywords": ["package", "name"],
+    "keywords": [
+        "package",
+        "name"
+    ],
     "dependencies": {
         "read-pkg": "^5.2.0"
     },
