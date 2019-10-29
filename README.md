@@ -1,41 +1,28 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Package name [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/pname/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/pname)
 
-My awesome module.
+Get the name of the calling package.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/pname.png)](https://npmjs.com/package/pname)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install pname
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const packageName = require("pname");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+console.log(packageName)
+//=> 'somePackageName'
 ```
 
 ## API
 
-### theModule(input, options?)
-
-#### input
+### packageName
 
 Type: `string`
 
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The name of the calling package.

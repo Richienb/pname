@@ -1,8 +1,8 @@
 {
-    "name": "the-module",
+    "name": "pname",
     "version": "0.0.0",
-    "description": "My awesome module.",
-    "repository": "https://github.com/Richienb/the-module.git",
+    "description": "Get the name of the calling package.",
+    "repository": "https://github.com/Richienb/pname.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "main": "index.js",
@@ -11,14 +11,16 @@
         "index.d.ts"
     ],
     "engines": {
-        "node": ">=8"
+        "node": ">=8.3"
     },
     "scripts": {
         "lint": "eslint .",
         "test": "yarn lint && ava"
     },
-    "keywords": [],
-    "dependencies": {},
+    "keywords": ["package", "name"],
+    "dependencies": {
+        "read-pkg": "^5.2.0"
+    },
     "devDependencies": {
         "ava": "^2.1.0",
         "eslint": "^6.5.1",

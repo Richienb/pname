@@ -1,14 +1,13 @@
 /**
- * My awesome module.
- * @param input Lorem ipsum.
- * @param postfix Lorem ipsum.
+ * The name of the calling package.
  * @example
  * ```
- * const theModule = require("the-module");
- * theModule("unicorns");
- * //=> 'unicorns & rainbows'
+ * const packageName = require("pname");
+ *
+ * console.log(packageName)
+ * //=> 'somePackageName'
  * ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string;
+declare const pName: string;
 
-export = theModule;
+export = pName;
